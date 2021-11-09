@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>872</width>
+    <height>542</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Project &quot;Railway&quot;</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 12pt &quot;Arial&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>CrossCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#centralWidget {
+background-color: transparent;
+border-image: url(:/Parovoz.jpg);
+background: none;
+background-repeat: none;
+}</string>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>872</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuTree">
+    <property name="title">
+     <string>Tree</string>
+    </property>
+    <addaction name="actionAdd"/>
+    <addaction name="actionDel"/>
+    <addaction name="actionEdit"/>
+    <addaction name="actionShow"/>
+   </widget>
+   <widget class="QMenu" name="menuFunctions">
+    <property name="title">
+     <string>Functions</string>
+    </property>
+    <addaction name="actionRateRailStations"/>
+    <addaction name="actionShowTrip"/>
+    <addaction name="actionShowByRoute"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTree"/>
+   <addaction name="menuFunctions"/>
+  </widget>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionDel">
+   <property name="text">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="actionFind_group">
+   <property name="text">
+    <string>Find group by kurator/headman/student</string>
+   </property>
+  </action>
+  <action name="actionEqual_2_facs_specs_groups_students">
+   <property name="text">
+    <string>Equal 2 facs/specs/groups/students</string>
+   </property>
+  </action>
+  <action name="actionShow_facs_by_amounf_of_students">
+   <property name="text">
+    <string>Show facs by amounf of students</string>
+   </property>
+  </action>
+  <action name="actionShow_groups_by_avarage_bal">
+   <property name="text">
+    <string>Show groups by avarage bal</string>
+   </property>
+  </action>
+  <action name="actionRateRailStations">
+   <property name="text">
+    <string>RateRailStations</string>
+   </property>
+  </action>
+  <action name="actionShowTrip">
+   <property name="text">
+    <string>ShowTrip</string>
+   </property>
+  </action>
+  <action name="actionShowByRoute">
+   <property name="text">
+    <string>ShowByRoute</string>
+   </property>
+  </action>
+  <action name="actionShow">
+   <property name="text">
+    <string>Show</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,49 @@
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
+#include <types.h>
+#include <QDialog>
+#include <QBoxLayout>
+#include <QLabel>
+#include <QComboBox>
+#include <QDialogButtonBox>
+#include <QMessageBox>
+#include <QLineEdit>
+#include <QFile>
+#include <QFileDialog>
+#include <QErrorMessage>
+#include <QPixmap>
+#include <QSpinBox>
+#include <QTableWidget>
+#include <QCheckBox>
+#include <QDebug>
+#include <ctime>
+#include <QTreeWidget>
+typedef int (*funcCMP)(void*,QString);
+void **initArr();
+void extend(void**&);
+void addToSort(void**&,void*,int);
+void addCity();
+void addRailStation();
+void addTrip();
+void findEl(void**,QString,int&,bool&,funcCMP);
+int cmpCity(void*,QString);
+int cmpRailSt(void*,QString);
+int cmpTrip(void*,QString);
+void del(void**&,int);
+void delCity();
+void delRailSt();
+void delTrip();
+void deletingTrip(void**&);
+void deletingRailSt(void**&);
+void editCity();
+void editRailSt();
+void editTrip();
+void sortAfterChanging(void**&,int,QString,funcCMP);
+void saveToFile(void**,QString);
+void retrieveFromFile(void**&,QString);
+QDialog *createDialog(QString);
+QDialogButtonBox *createDialogButtonBox(QDialog*);
+QLabel *createLabel(QString);
+
+int countRailStations(void **rail);
+#endif // FUNCTIONS_H
